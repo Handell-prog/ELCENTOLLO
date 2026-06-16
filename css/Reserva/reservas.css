@@ -1,0 +1,45 @@
+/* ===== PÁGINA RESERVAS ===== */
+#contenido_reservas {
+    padding: 60px 40px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+}
+
+#titulo_reservas {
+    font-family: "Alex Brush", cursive;
+    font-size: 52px;
+    color: #0f1118;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#subtitulo_reservas {
+    font-size: 16px;
+    color: #555;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+#qr_img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 600px) {
+    #contenido_reservas {
+        padding: 30px 18px;
+    }
+    #titulo_reservas {
+        font-size: 38px;
+    }
+    #qr_img {
+        width: 220px;
+        height: 220px;
+    }
+}

@@ -1,0 +1,179 @@
+/* ===== CRÉDITOS ===== */
+        #creditos_main {
+            padding: 60px 20px;
+            background: #f5f5f5;
+            min-height: 60vh;
+        }
+
+        #creditos_titulo {
+            text-align: center;
+            font-family: "Alex Brush", cursive;
+            font-size: 52px;
+            color: #0f1118;
+            margin: 0 0 10px 0;
+        }
+
+        #creditos_subtitulo {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin: 0 0 50px 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .creditos_grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* ===== TARJETA DE CRÉDITO ===== */
+        .credito_card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+            padding: 36px 30px 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 240px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .credito_card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+        }
+
+        /* ===== FOTO ===== */
+        .credito_foto_wrapper {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #0f1118;
+            margin-bottom: 18px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .credito_foto_wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        /* Placeholder cuando no hay foto */
+        .credito_foto_placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #d8d8d8;
+            color: #999;
+            font-size: 12px;
+            text-align: center;
+            gap: 6px;
+        }
+
+        .credito_foto_placeholder svg {
+            width: 48px;
+            height: 48px;
+            fill: #bbb;
+        }
+
+        /* ===== INFORMACIÓN ===== */
+        .credito_nombre {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0f1118;
+            text-align: center;
+            margin: 0 0 6px 0;
+        }
+
+        .credito_rol {
+            font-size: 13px;
+            color: #c0392b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        .credito_descripcion {
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ===== SEPARADOR ===== */
+        .creditos_divider {
+            width: 60px;
+            height: 3px;
+            background: #0f1118;
+            border-radius: 2px;
+            margin: 10px auto 14px;
+        }
+
+        /* ===== SECCION DEL PROYECTO ===== */
+        #proyecto_seccion {
+            max-width: 700px;
+            margin: 60px auto 0;
+            background: #0f1118;
+            border-radius: 16px;
+            padding: 36px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        #proyecto_seccion h2 {
+            font-family: "Alex Brush", cursive;
+            font-size: 36px;
+            margin: 0 0 12px 0;
+            color: #fff;
+        }
+
+        #proyecto_seccion p {
+            color: rgba(255,255,255,0.75);
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0 0 8px 0;
+        }
+
+        #proyecto_seccion .proyecto_dato {
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            #creditos_titulo {
+                font-size: 38px;
+            }
+
+            .creditos_grid {
+                gap: 24px;
+            }
+
+            .credito_card {
+                width: 85%;
+                max-width: 300px;
+            }
+
+            #proyecto_seccion {
+                padding: 28px 20px;
+            }
+        }

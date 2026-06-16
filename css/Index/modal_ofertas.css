@@ -1,0 +1,196 @@
+/* ===== MODAL DE OFERTAS ===== */
+#overlay_modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInOverlay 0.3s ease;
+}
+
+#overlay_modal.oculto {
+    display: none;
+}
+
+@keyframes fadeInOverlay {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Caja del modal */
+#modal_ofertas {
+    background: #fff;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 560px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    animation: slideUpModal 0.35s ease;
+    position: relative;
+}
+
+@keyframes slideUpModal {
+    from { transform: translateY(40px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* Cabecera dorada */
+#modal_header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    padding: 28px 30px 22px;
+    text-align: center;
+    border-bottom: 3px solid rgb(247, 187, 109);
+}
+
+#modal_logo {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+#modal_header h2 {
+    font-family: "Alex Brush", cursive;
+    font-size: 36px;
+    color: rgb(247, 187, 109);
+    margin: 0 0 4px;
+}
+
+#modal_header p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Botón cerrar */
+#btn_cerrar_modal {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+#btn_cerrar_modal:hover {
+    color: rgb(247, 187, 109);
+}
+
+/* Cuerpo con las ofertas */
+#modal_body {
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.oferta_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f7f5f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    border-left: 4px solid rgb(247, 187, 109);
+}
+
+.oferta_emoji {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.oferta_texto {
+    flex: 1;
+}
+
+.oferta_texto h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 3px;
+}
+
+.oferta_texto p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.oferta_badge {
+    background: #c0392b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Pie del modal */
+#modal_footer {
+    padding: 18px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#btn_ver_menu {
+    background: rgb(247, 187, 109);
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 36px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#btn_ver_menu:hover {
+    background: #e8a82a;
+    transform: scale(1.03);
+}
+
+#modal_footer small {
+    font-size: 12px;
+    color: #aaa;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#modal_footer small:hover {
+    color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    #modal_header h2 {
+        font-size: 28px;
+    }
+
+    #modal_body {
+        padding: 18px 16px;
+    }
+
+    .oferta_item {
+        gap: 12px;
+    }
+
+    .oferta_badge {
+        display: none;
+    }
+}

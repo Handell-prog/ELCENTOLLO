@@ -1,0 +1,175 @@
+/* ===== RESET ===== */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+    width: 100%;
+    background: #e9e9e9;
+}
+
+/* INFO SUPERIOR */
+#info_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #0f1118;
+    padding: 35px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.espac_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+    flex: 1 1 140px;
+}
+
+.img_info_footer {
+    width: 80px;
+    height: auto;
+}
+
+#tit_footer {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0 6px;
+}
+
+.info_footer {
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ===== CONTACTO + REDES ===== */
+#footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CONTACTO */
+#contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacto_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#img_contacto {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+#tit_contacto {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+/* REDES */
+#redes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#img_redes {
+    display: inline-flex;
+}
+
+#redes img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s;
+}
+
+#redes img:hover {
+    transform: scale(1.12);
+}
+
+/* ===== RESPONSIVE TABLET ===== */
+@media (max-width: 900px) {
+    #footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+    }
+
+    #redes {
+        align-self: flex-start;
+    }
+}
+
+/* ===== RESPONSIVE MÓVIL ===== */
+@media (max-width: 600px) {
+    #info_footer {
+        justify-content: center;
+        padding: 25px 16px;
+        gap: 24px;
+    }
+
+    .espac_info {
+        max-width: 45%;
+        flex: 1 1 120px;
+    }
+
+    .img_info_footer {
+        width: 60px;
+    }
+
+    #tit_footer {
+        font-size: 14px;
+    }
+
+    .info_footer {
+        font-size: 12px;
+    }
+
+    #footer-bottom {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    #tit_contacto {
+        font-size: 13px;
+        word-break: break-all;
+    }
+
+    #img_contacto {
+        width: 22px;
+        height: 22px;
+    }
+
+    #redes img {
+        width: 40px;
+        height: 40px;
+    }
+}

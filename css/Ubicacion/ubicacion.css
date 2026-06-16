@@ -1,0 +1,127 @@
+/* ===== PÁGINA UBICACIÓN ===== */
+#contenido_ubicacion {
+    padding: 60px 40px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo_ubicacion {
+    font-family: "Alex Brush", cursive;
+    font-size: 52px;
+    color: #0f1118;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#subtitulo_ubicacion {
+    font-size: 16px;
+    color: #555;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+/* ===== LAYOUT ===== */
+#layout_ubicacion {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    align-items: flex-start;
+}
+
+/* ===== MAPA ===== */
+#bloque_mapa {
+    flex: 2;
+}
+
+#bloque_mapa iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+/* ===== INFO DIRECCIÓN ===== */
+#bloque_direccion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 24px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+#bloque_direccion h2 {
+    font-family: "Alex Brush", cursive;
+    font-size: 30px;
+    color: #0f1118;
+    margin: 0 0 6px 0;
+}
+
+.dato_ubicacion {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.dato_ubicacion img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.dato_ubicacion p {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ===== HORARIO ===== */
+#horario_ubicacion {
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+
+#horario_ubicacion h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f1118;
+    margin: 0 0 10px 0;
+}
+
+.fila_horario {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    #layout_ubicacion {
+        flex-direction: column;
+    }
+
+    #bloque_mapa iframe {
+        height: 340px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contenido_ubicacion {
+        padding: 30px 18px;
+    }
+
+    #titulo_ubicacion {
+        font-size: 38px;
+    }
+}

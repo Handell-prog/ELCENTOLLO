@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - El Centollo</title>
+    <link rel="icon" href="../imagenes/Logo/Logo.png">
+
+    <!--Fuente letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="../css/global/header.css">
+    <link rel="stylesheet" href="../css/global/footer.css">
+    <link rel="stylesheet" href="../css/Reserva/reservas.css">
+    <link rel="stylesheet" href="../css/global/chatbot.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo"><a href="../index.html"><img src="../imagenes/Logo/Logo.png" class="logo"></a></div>
+        <h1 id="titulo">El Centollo</h1>
+        <div id="menu">
+            <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="menu" id="nav-links">
+                <a href="../index.html" id="menu_boton">Inicio</a>
+                <a href="menu.html" id="menu_boton">Menú</a>
+                <a href="contacto.html" id="menu_boton">Contacto</a>
+                <a href="ubicacion.html" id="menu_boton">Ubicación</a>
+                <a href="#" id="menu_boton">Reservas</a>
+                <a href="creditos.html" id="menu_boton">Créditos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="contenido_reservas">
+            <h1 id="titulo_reservas">Reserva tu Mesa</h1>
+            <p id="subtitulo_reservas">Escanea el QR para hacer tu reserva</p>
+            <img src="../imagenes/Qr/Reserva.png" alt="QR de reservas" id="qr_img">
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div id="info_footer">
+            <div class="espac_info">
+                <img src="../imagenes/Footer/1911.png" class="img_info_footer" alt="Más de 100 años">
+                <h2 id="tit_footer">Más de 100 años</h2>
+                <p class="info_footer">Desde 1911 trabajando con el mejor producto del mar.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/pez.png" class="img_info_footer" alt="Producto fresco">
+                <h2 id="tit_footer">El producto más fresco</h2>
+                <p class="info_footer">Pescados y mariscos directos de la lonja.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/nube.png" class="img_info_footer" alt="Ahumados">
+                <h2 id="tit_footer">Ahumados artesanales</h2>
+                <p class="info_footer">Descubre nuestros procesos de ahumado.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/la tienda.png" class="img_info_footer" alt="Tienda física">
+                <h2 id="tit_footer">Tienda propia</h2>
+                <p class="info_footer">También te servimos en nuestra tienda física.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/caña.png" class="img_info_footer" alt="Selección">
+                <h2 id="tit_footer">Seleccionamos por ti</h2>
+                <p class="info_footer">Despreocúpate y disfruta del mejor género del mar.</p>
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <div id="contacto">
+                <div class="contacto_item">
+                    <img src="../imagenes/Contacto/ubicacion.png" id="img_contacto" alt="Ubicación">
+                    <h2 id="tit_contacto">Carrera 1 #93-50 Chicó Alto, Bogotá</h2>
+                </div>
+                <div class="contacto_item">
+                    <img src="../imagenes/Contacto/telefono.png" id="img_contacto" alt="Teléfono">
+                    <h2 id="tit_contacto">Tel: (57) 316 690 0508</h2>
+                </div>
+                <div class="contacto_item">
+                    <img src="../imagenes/Contacto/correo.png" id="img_contacto" alt="Correo">
+                    <h2 id="tit_contacto">servicioalcliente@elcentollo.com.co</h2>
+                </div>
+            </div>
+            <div id="redes">
+                <div id="img_redes"><img src="../imagenes/redes/facebook.png" alt="Facebook"></div>
+                <div id="img_redes"><img src="../imagenes/redes/twiter.png" alt="Twitter"></div>
+                <div id="img_redes"><img src="../imagenes/redes/whatsapp.png" alt="WhatsApp"></div>
+                <div id="img_redes"><img src="../imagenes/redes/telegram.png" alt="Telegram"></div>
+                <div id="img_redes"><img src="../imagenes/redes/+.png" alt="Más redes"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/menu_hamburguesa.js"></script>
+    <script src="../js/chatbot.js"></script>
+</body>
+
+</html>

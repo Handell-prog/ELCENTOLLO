@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos - El Centollo</title>
+    <link rel="icon" href="../imagenes/Logo/Logo.png">
+
+    <!--Fuente letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <!--Estilos globales-->
+    <link rel="stylesheet" href="../css/global/header.css">
+    <link rel="stylesheet" href="../css/global/footer.css">
+    <link rel="stylesheet" href="../css/global/chatbot.css">
+    <link rel="stylesheet" href="../css/Credito/creditos.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo"><a href="../index.html"><img src="../imagenes/Logo/Logo.png" class="logo"></a></div>
+        <h1 id="titulo">El Centollo</h1>
+        <div id="menu">
+            <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="menu" id="nav-links">
+                <a href="../index.html" id="menu_boton">Inicio</a>
+                <a href="menu.html" id="menu_boton">Menú</a>
+                <a href="contacto.html" id="menu_boton">Contacto</a>
+                <a href="ubicacion.html" id="menu_boton">Ubicación</a>
+                <a href="reservas.html" id="menu_boton">Reservas</a>
+                <a href="#" id="menu_boton">Créditos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="creditos_main">
+            <h1 id="creditos_titulo">Créditos</h1>
+            <p id="creditos_subtitulo">Equipo de desarrollo del sitio web</p>
+
+            <div class="creditos_grid">
+
+                <div class="credito_card">
+                    <div class="credito_foto_wrapper">
+                        <img src="../imagenes/creditos_foto.jpg" alt="Foto del desarrollador">
+                    </div>
+                    <p class="credito_nombre">Tu Nombre Aquí</p>
+                    <div class="creditos_divider"></div>
+                    <p class="credito_rol">Desarrollador Web</p>
+                    <p class="credito_descripcion">Diseño, maquetación y programación del sitio web de El Centollo.</p>
+                </div>
+            </div>
+
+            <!-- Sección info del proyecto -->
+            <div id="proyecto_seccion">
+                <h2>El Centollo</h2>
+                <p>Proyecto web desarrollado como ejercicio académico para la asignatura de Desarrollo Web.</p>
+                <p class="proyecto_dato">Tecnologías: HTML5 · CSS3 · JavaScript</p>
+                <p class="proyecto_dato">Año: 2025</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div id="info_footer">
+            <div class="espac_info">
+                <img src="../imagenes/Footer/1911.png" class="img_info_footer" alt="Más de 100 años">
+                <h2 id="tit_footer">Más de 100 años</h2>
+                <p class="info_footer">Desde 1911 trabajando con el mejor producto del mar.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/pez.png" class="img_info_footer" alt="Producto fresco">
+                <h2 id="tit_footer">El producto más fresco</h2>
+                <p class="info_footer">Pescados y mariscos directos de la lonja.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/nube.png" class="img_info_footer" alt="Ahumados">
+                <h2 id="tit_footer">Ahumados artesanales</h2>
+                <p class="info_footer">Descubre nuestros procesos de ahumado.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/la tienda.png" class="img_info_footer" alt="Tienda física">
+                <h2 id="tit_footer">Tienda propia</h2>
+                <p class="info_footer">También te servimos en nuestra tienda física.</p>
+            </div>
+            <div class="espac_info">
+                <img src="../imagenes/Footer/caña.png" class="img_info_footer" alt="Selección">
+                <h2 id="tit_footer">Seleccionamos por ti</h2>
+                <p class="info_footer">Despreocúpate y disfruta del mejor género del mar.</p>
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <div id="contacto">
+                <div class="contacto_item">
+                    <img src="../imagenes/Contacto/ubicacion.png" id="img_contacto" alt="Ubicación">
+                    <h2 id="tit_contacto">Carrera 1 #93-50 Chicó Alto, Bogotá</h2>
+                </div>
+                <div class="contacto_item">
+                    <img src="../imagenes/Contacto/telefono.png" id="img_contacto" alt="Teléfono">
+                    <h2 id="tit_contacto">Tel: (57) 316 690 0508</h2>
+                </div>
+                <div class="contacto_item">
+                    <img src="../imagenes/Contacto/correo.png" id="img_contacto" alt="Correo">
+                    <h2 id="tit_contacto">servicioalcliente@elcentollo.com.co</h2>
+                </div>
+            </div>
+            <div id="redes">
+                <div id="img_redes"><img src="../imagenes/redes/facebook.png" alt="Facebook"></div>
+                <div id="img_redes"><img src="../imagenes/redes/twiter.png" alt="Twitter"></div>
+                <div id="img_redes"><img src="../imagenes/redes/whatsapp.png" alt="WhatsApp"></div>
+                <div id="img_redes"><img src="../imagenes/redes/telegram.png" alt="Telegram"></div>
+                <div id="img_redes"><img src="../imagenes/redes/+.png" alt="Más redes"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/menu_hamburguesa.js"></script>
+    <script src="../js/chatbot.js"></script>
+</body>
+
+</html>
